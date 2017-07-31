@@ -57,7 +57,10 @@ productRouter.route('/update/:id').post(function (req, res) {
       return next(new Error('Could not load Document'));
     else {
       // do your updates here
-      product.product = req.body.product;
+      console.log(req.body);
+      product.title = req.body.title;
+      product.description = req.body.description;
+      product.price = req.body.price;
 
       product.save().then(product => {
           res.json('Update complete');
