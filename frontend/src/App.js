@@ -40,8 +40,11 @@ class App extends Component {
           <div className="subtitle">Made with ReactJs, NodeJs, MongoDB and Love</div>
         </div>
 
+        <div className="status-uptime">
+        </div>
+
         <div className="container">
-            <table className="table is-fullwidth is-striped">
+            <table className="table table-fullwith is-striped">
               <thead>
                 <tr>
                   <td>No.</td>
