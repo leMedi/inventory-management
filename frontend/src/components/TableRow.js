@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import {Link} from 'react-router-dom';
 import ProductService from './ProductService';
 
 
@@ -32,7 +33,7 @@ class TableRow extends Component {
                     <span className="tag is-primary is-medium">{this.props.obj.price}</span>
                 </td>
                 <td>
-                    <button className="button is-warning">Edit</button>
+                    <Link to={"/edit/"+this.props.obj._id} className="button is-warning">Edit</Link>
                 </td>
                 <td>
                     <form onSubmit={this.handleSubmit}>

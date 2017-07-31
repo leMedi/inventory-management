@@ -17,6 +17,12 @@ class ProductService {
     .then(console.log('Deleted'))
     .catch(err => console.log(err));
   }
+
+  updateData(data, id){
+    axios.post('http://localhost:4200/products/update/'+id, data)
+    .then(res => this.setState({ items: res.data }))
+    .catch(err => console.log(err))
+  }
 }
 
 export default ProductService;
