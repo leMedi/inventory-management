@@ -17,7 +17,7 @@ mongoose.connect('mongodb://localhost:27017/finamaze')
     });
 
 // Required application specific custom router module
-var productRouter = require('./src/routes/productRouter');
+var productRouter = require('./routes/productRouter');
 
 // Use middlewares to set view engine and post json data to the server
 app.use(express.static('public'));
