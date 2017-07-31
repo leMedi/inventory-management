@@ -37,21 +37,21 @@ class AddProduct extends Component {
                         <div className="field">
                             <label className="label">Title</label>
                             <div className="control">
-                                <input className="input" type="text" placeholder="Text input"/>
+                                <input className="input" type="text" placeholder="Text input" name="title"/>
                             </div>
                         </div>
 
                         <div className="field">
                             <label className="label">Description</label>
                             <div className="control">
-                                <input className="input" type="text" placeholder="Text input"/>
+                                <input className="input" type="text" placeholder="Text input" name="description"/>
                             </div>
                         </div>
 
                         <div className="field">
                             <label className="label">Price</label>
                             <div className="control">
-                                <input className="input" type="text" placeholder="Text input"/>
+                                <input className="input" type="text" placeholder="Text input" name="price"/>
                             </div>
                         </div>
 
