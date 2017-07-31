@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import ProductService from './ProductService';
 
 class AddProduct extends Component {
     constructor(props) {
@@ -17,7 +18,7 @@ class AddProduct extends Component {
       alert(this.state.value);
       event.preventDefault();
     }
-    
+
     render() {
         return (
             <div>
