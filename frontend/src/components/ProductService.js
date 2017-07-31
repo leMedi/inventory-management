@@ -11,6 +11,12 @@ class ProductService {
         console.log(error);
     });
   }
+
+  deleteData(id){
+    axios.get('http://localhost:4200/products/delete/'+id)
+    .then(console.log('Deleted'))
+    .catch(err => console.log(err));
+  }
 }
 
 export default ProductService;
